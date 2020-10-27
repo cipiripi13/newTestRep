@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;   /*podesavamo columns u gridu*/
+    grid-column-gap: 1em;     /*umesto margine kod grida koristimo column-gap za razdvajanje kolona*/
+    grid-row-gap: 1em;        /*za razdvajanje redova tj.za razmak izmedju*/
+    /*skracena verzija je 
+    grid-gap: 1em;*/
+}
+
+
+.wrapper > div {
+    background: grey;
+    padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+    background: hotpink;
+}
+/*ovim selektujemo div sa klasom wrapp i unutar njega svaki div koji je neparan*/
