@@ -1,0 +1,61 @@
+header {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: yellow;
+  /*background: lightblue; */
+  height: 100vh;
+  color: #e021a0;
+}
+
+header button {
+  background-color: #15ad15;
+  color: #e021a0;
+  /*ugnjezdavamo, to bi bilo isto kado da smo u css-u pisali header button pa dali svojstva*/
+  /*ako dodajemo after, ili focus i slicno bilo bi onda &::after 
+        {content: "HELLLOOOO"},ovo je samo primer*/
+}
+
+header button:hover {
+  background-color: red;
+  /*dodajemo direktno hover i skracujemo kod ali obavezno je ispred &*/
+}
+
+header button {
+  /* background-color: red; */
+}
+
+.contact button {
+  /* background-color: red; */
+  background-color: #15ad15;
+}
+
+.contact {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: blue;
+}
+/*# sourceMappingURL=style.css.map */

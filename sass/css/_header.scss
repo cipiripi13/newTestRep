@@ -1,0 +1,26 @@
+@mixin flexCenter ($direction, $background) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+
+}
+
+
+header{
+    @include flexCenter(column, yellow);
+
+    /*background: lightblue; */
+    height: 100vh;
+    color: $textColor;
+    button{
+        background-color: $primaryBtn;
+        color: $textColor;  /*ugnjezdavamo, to bi bilo isto kado da smo u css-u pisali header button pa dali svojstva*/
+        &:hover {
+            background-color: red;  /*dodajemo direktno hover i skracujemo kod ali obavezno je ispred &*/
+        };              /*ako dodajemo after, ili focus i slicno bilo bi onda &::after 
+        {content: "HELLLOOOO"},ovo je samo primer*/
+    }
+}
