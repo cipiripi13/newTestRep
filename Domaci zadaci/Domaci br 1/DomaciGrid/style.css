@@ -1,0 +1,162 @@
+/* Pages setup that is universal for all*/
+
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.header{
+    background-color:rgb(175, 41, 130);
+    height: 100px;
+    
+}
+
+/* Letters of logo setup */
+#logo {
+    color: white;
+    text-align: left;
+    font-size: 33px;
+    text-transform: uppercase;
+    padding-top: 25px;
+
+}
+
+.div1{
+    background-color: rgb(75, 112, 212);
+    min-height: 400px;
+    grid-area: div1;
+}
+.div2, .div3, .div4 {
+    min-height: 200px;
+}
+.div2, .div3 {
+    background-color: rgb(59, 172, 89);
+}
+.div2 {
+    grid-area: div2;
+}
+.div3{
+    grid-area: div3;
+}
+.div4{
+    grid-area: div4;
+    background-color: rgb(197, 186, 90);
+}
+.div5, .div6, .div7 {
+    background-color: rgb(107, 194, 235);
+    height: 200px;
+}
+.div5{
+    grid-area: div5;
+}
+.div6 {
+    grid-area: div6;
+}
+.div7 {
+    grid-area: div7;
+}
+
+/* Footer */
+.footer{
+    background-color: rgb(155, 11541, 173);
+    height: 100px;
+}
+
+
+/* containers */
+.container, .bottom-container, .top-container{
+    display: grid;
+    grid-gap: 10px;
+    
+}
+.container {
+    grid-template-columns: 100%;
+}
+/* End of page setup */
+
+
+
+/* Media Queries */
+
+/* iPhone X/XS:		375px  */
+@media (min-width:375px) {
+    
+    .top-container{
+        grid-template-areas: 
+        'div4'
+        'div2'
+        'div3'
+        'div1';
+} 
+.bottom-container {
+    grid-template-areas: 
+    'div5'
+    'div6'
+    'div7';
+}
+}
+
+/* iPad portrait mode:	768px */
+
+@media (min-width:768px){
+    .top-container {
+        grid-template-areas: 
+        'div1 div1'
+        'div4 div4'
+        'div2 div3';
+    }
+    .bottom-container {
+        grid-template-areas: 
+        'div7 div7'
+        'div5 div6';
+    }
+}
+
+
+@media (min-width:1024px) {
+    .div1{
+        height: 500px;
+    }
+    .div4 {
+        min-height: 300px;
+    }
+    .top-container{
+        grid-template-areas: 
+        'div1 div1 div1 div2 div2'
+        'div1 div1 div1 div3 div3'
+        'div4 div4 div4 div4 div4';
+    }
+    .bottom-container{
+        grid-template-areas: 
+        'div5 div6'
+        'div7 div7';
+    }
+    
+} 
+@media (min-width: 1360px) {
+    .div1 {
+        min-height: 666px;
+    }
+    .div2, .div3 {
+        min-height: 300px;
+    }
+    .top-container {
+        grid-template-areas: 
+        'div1 div1 div2 div3'
+        'div1 div1 div4 div4';
+    }
+    .bottom-container {
+        grid-template-areas: 
+        'div5 div6 div6 div7';
+    }
+}
+
+
+
+
+ 
+
+
+
